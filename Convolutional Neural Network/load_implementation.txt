@@ -1,0 +1,7 @@
+Load implementation:
+
+model = getModel("trained_model")
+loss, acc = model.evaluate(testing_data, testing_labels, verbose=2)
+print('Restored model, accuracy: {:5.2f}%'.format(100 * acc))
+
+This matches the provided load implementation, but still works with dropout layers and the compile-fit model implementation

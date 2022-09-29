@@ -1,0 +1,14 @@
+To load my model, use the following code:
+
+model = DeepDynamicModel()
+model.compile(
+    optimizer=tf.keras.optimizers.Adamax(learning_rate=lr),
+    loss=tf.keras.losses.MeanSquaredError(),
+    metrics=[MPJPE()]
+)
+
+model.build((1, 8, 224, 224, 3))
+model.load_weights('model_weights')
+predict = model.predict(test_data, batch_size=batch_size)
+MPJPE = tf.math.reduce_mean(tf.math.reduce_euclidean_norm((testing_label - predict), axis=3)) * 1000
+print('Final MPJPE:', MPJPE.numpy())

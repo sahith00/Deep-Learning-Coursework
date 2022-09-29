@@ -1,0 +1,11 @@
+Classification error of class 0 : 0.23770492
+Classification error of class 1 : 0.16237624
+Classification error of class 2 : 0.44726562
+Classification error of class 3 : 0.4024145
+Classification error of class 4 : 0.17751479
+Classification error of class 5 : 0.40368852
+Classification error of class 6 : 0.13238288
+Classification error of class 7 : 0.24040404
+Classification error of class 8 : 0.115079366
+Classification error of class 9 : 0.20077972
+Average classification error: 0.2519610606133938
